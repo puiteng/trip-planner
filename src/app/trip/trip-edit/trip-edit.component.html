@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="tripForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Title:</label>
+            <input
+              type="text"
+              id="title"
+              formControlName="title"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="content">Location:</label>
+            <input
+              type="text"
+              id="location"
+              formControlName="location"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success" [disabled]="!tripForm.valid">Create</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

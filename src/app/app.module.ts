@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -11,6 +10,7 @@ import { SigninComponent } from './Auth/signin.component';
 import { SignupComponent } from './Auth/signup.component';
 import { routing } from './app.routing';
 import { AuthService } from './auth.service';
+import { TripEditComponent } from './trip/trip-edit/trip-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { AuthService } from './auth.service';
     HeaderComponent,
     HomeComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    TripEditComponent
   ],
   imports: [
     BrowserModule,
